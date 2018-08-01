@@ -1,0 +1,32 @@
+{
+  "name": "authentication-web-ext",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "nodemon ./bin/www",
+    "prepush": "npm run check-security",
+    "check-security": "git secrets --scan"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.259.1",
+    "aws4": "^1.7.0",
+    "axios": "^0.18.0",
+    "base-64": "^0.1.0",
+    "body-parser": "~1.18.2",
+    "cookie-parser": "~1.4.3",
+    "crypto-js": "^3.1.9-1",
+    "debug": "~2.6.9",
+    "express": "~4.15.5",
+    "hbs": "~4.0.1",
+    "json-pretty-html": "^1.1.2",
+    "jsonwebtoken": "^8.2.1",
+    "morgan": "~1.9.0",
+    "node-jose": "^0.11.0",
+    "promise": "^8.0.1",
+    "querystring": "^0.2.0",
+    "serve-favicon": "~2.4.5"
+  },
+  "devDependencies": {
+    "nodemon": "^1.17.5"
+  }
+}
