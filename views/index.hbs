@@ -1,0 +1,29 @@
+<h1>Authentication PoC - Web - External</h1>
+
+{{#if isLoggedIn}}
+<div>
+    <p><b>Status:</b> Logged In</p>
+    <p><a href="/logout">Logout</a></p>
+    <p><b>Access Token:</b> {{accessToken}}</p>
+    <p><b>Access Token Validity:</b> {{accessTokenInfo.message}}</p>
+    <p><b>Access Token Json:</b></p>
+    <p><pre>{{{accessTokenInfo.json}}}</pre></p>
+    <p><b>ID Token:</b> {{idToken}}</p>
+    <p><b>ID Token Validity:</b> {{idTokenInfo.message}}</p>
+    <p><b>ID Token Json:</b></p>
+    <p><pre>{{{idTokenInfo.json}}}</pre></p>
+</div>
+{{else}}
+<div>
+    <p><b>Status:</b> Not Logged In</p>
+    <p><a href="/authenticateOIDC">Login with OpenID Connect</a></p>
+    <p><a href="/authenticateSAML">Login with SAML</a></p>
+</div>
+{{/if}}
+
+{{#if error}}
+<div>
+    <p><b>Error Message:</b> {{error.message}}</p>
+    <p><b>Error Stack:</b> {{error.stack}}</p>
+</div>
+{{/if}}
