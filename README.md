@@ -2,7 +2,7 @@
 This PoC is to validate the authentication and authorisation solution for external users accessing CVS resource via Azure AD B2C authentication.
 
 ## Getting Started
-To get the projec working locally you'll need to install git secrets as this is used as a prepush check to mitigate the release of secrets into the public. For more information check the [Git Secrets Github Repo](https://github.com/awslabs/git-secrets).
+To get the project working locally you'll need to install git secrets as this is used as a prepush check to mitigate the release of secrets into the public. For more information check the [Git Secrets Github Repo](https://github.com/awslabs/git-secrets).
 
 Additionally, to use this PoC you need to add a `config.js` file to the root of the directory.  This file should be of the following format:
 
