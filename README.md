@@ -1,3 +1,5 @@
+**This repository is no longer maintained**
+
 # Authentication Proof of Concept - Web Internal
 This PoC is to validate the authentication and authorisation solution for external users accessing CVS resource via Azure AD B2C authentication.
 
